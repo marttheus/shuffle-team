@@ -29,14 +29,21 @@ $(function () {
 
                 var qtyTeams = Math.ceil(names.length / parseInt(qty));
                 for(let i = 0; i < qtyTeams; i++){
+                    $("#result").append("<div id='" + i + "' class='team'><h7 class='title'>Time - " + (parseInt(i) + 1) + "</h7><hr></div>");
+                    var team = $(".team#" + i);
                     let removeIndex = 0;
                     names.slice(0, parseInt(qty)).forEach(function(player, index){
                         //cada i é um time, cada player aqui é um jogador que pertence a esse time
                         //agr só criar o html pra cada time e player no time
+
+                        team.append("<div class='s_player'>" + player + "</div>")
                         removeIndex++;
                     });
                     names.splice(0, removeIndex);
                 }
+
+                $("#register").hide();
+                $("#result").show();
             }
             else{
                 $("#invalidQty").fadeIn();
