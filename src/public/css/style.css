@@ -13,3 +13,14 @@ html, body{
 .col-sm{
     margin: auto auto auto 0;
 }
+
+.header{
+    background-color: rgba(0,0,0,0.3);
+    padding: 10px;
+}
+
+.title{
+    text-align: center;
+    white-space: nowrap;
+    color: white;
+}
