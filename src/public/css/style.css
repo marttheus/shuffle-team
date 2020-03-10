@@ -14,13 +14,28 @@ html, body{
     margin: auto auto auto 0;
 }
 
-.header{
+.header, .content{
     background-color: rgba(0,0,0,0.3);
     padding: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 
 .title{
     text-align: center;
     white-space: nowrap;
     color: white;
+}
+
+.item{
+    color: white;
+    text-align: center;
+    width: 49.2%;
+    display: inline-block;
+}
+
+hr{
+    background-color: white;
+    margin: 0;
+    padding: 0;
 }
