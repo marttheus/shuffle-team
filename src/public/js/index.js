@@ -6,7 +6,12 @@ $(function () {
                 var content = $(".content");
                 content.append("<div class='item'>" + player.trim() + "</div>");
             });
-            $("#player").val("");;
+            $("#player").val("");
+            $("#invalid").fadeOut();
+        }
+        else{
+            $("#invalid").fadeIn();
+            $("#player").focus();
         }
     });
  });

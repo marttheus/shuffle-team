@@ -31,6 +31,15 @@ html, body{
     border-radius: 0;
     border-right: none;
     background-clip: unset;
+    box-shadow: none;
+    border-color: transparent;
+}
+
+.invalid{
+    color: red;
+    text-align: center;
+    width: 0px;
+    border-radius: 0;
 }
 
 .item{
@@ -62,4 +71,8 @@ hr{
 
 #add:focus{
     outline: none;
+}
+
+#add:active{
+    background-color: transparent;
 }

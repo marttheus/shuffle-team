@@ -20,7 +20,10 @@
                     <div class="header">
                         <h1 class="title">+JOGADORES</h1>
                         <div class="input-group">
-                            <input id="player" type="text" class="form-control" placeholder="Digite o nome do jogador">
+                            <div id="invalid" class="input-group-prepend" style="display: none;">
+                                <div class="input-group-text invalid">!</div>
+                            </div>
+                            <input id="player" type="text" class="form-control icon" placeholder="Digite o nome do jogador">
                             <div class="input-group-btn">
                               <button id="add">Adicionar</button>
                             </div>
