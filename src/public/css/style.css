@@ -39,3 +39,11 @@ hr{
     margin: 0;
     padding: 0;
 }
+#addButton{
+    margin-left: 6px;
+    
+}
+
+#addButton:hover{
+    background-color: #bfbfbf;
+}
