@@ -36,14 +36,6 @@ html, body{
 
 hr{
     background-color: white;
-    margin: 0;
+    margin: 5px;
     padding: 0;
-}
-#addButton{
-    margin-left: 6px;
-    
-}
-
-#addButton:hover{
-    background-color: #bfbfbf;
 }
