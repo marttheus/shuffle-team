@@ -14,7 +14,7 @@ html, body{
     margin: auto auto auto 0;
 }
 
-.header, .content{
+.header, .content, .footer{
     background-color: rgba(0,0,0,0.3);
     padding: 10px;
     margin-top: 10px;
@@ -27,7 +27,7 @@ html, body{
     color: white;
 }
 
-#player{
+#player, #qty{
     border-radius: 0;
     border-right: none;
     background-clip: unset;
@@ -65,14 +65,26 @@ hr{
     border-left: none;
 }
 
-#add:hover{
+#add:hover, #shuffle:hover{
     cursor: pointer;
 }
 
-#add:focus{
+#add:focus, #shuffle:focus{
     outline: none;
 }
 
-#add:active{
+#add:active, #shuffle:active{
     background-color: transparent;
+}
+
+#shuffle{
+    color: white;
+    height: 100%;
+    width: 100%;
+    background-color: transparent;
+    border: 1px solid white;
+}
+
+#qty{
+    text-align: center;
 }
