@@ -1,0 +1,15 @@
+html, body{
+    overflow: hidden;
+    padding: 0;
+    margin: 0;
+    background-color: green;
+    height: 100%;
+}
+
+.container, .row{
+    height: 100%;
+}
+
+.col-sm{
+    margin: auto auto auto 0;
+}
