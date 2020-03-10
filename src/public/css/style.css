@@ -27,6 +27,12 @@ html, body{
     color: white;
 }
 
+#player{
+    border-radius: 0;
+    border-right: none;
+    background-clip: unset;
+}
+
 .item{
     color: white;
     text-align: center;
@@ -38,4 +44,22 @@ hr{
     background-color: white;
     margin: 5px;
     padding: 0;
+}
+
+#add{
+    height: 100%;
+    color: white;
+    background-color: green;
+    border-top: 1px solid rgb(206,212,218);
+    border-right: 1px solid rgb(206,212,218);
+    border-bottom: 1px solid rgb(206,212,218);
+    border-left: none;
+}
+
+#add:hover{
+    cursor: pointer;
+}
+
+#add:focus{
+    outline: none;
 }
