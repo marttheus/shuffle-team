@@ -1,11 +1,26 @@
+let playerNumber = 1
+
 $(function () {
     $("#add").click(function () {
         var names = $("#player").val();
         if(names !== null && names !== undefined && names !== ""){
-            names.split(',').forEach((player, index) => {
+
+            listOfNames = []
+
+            if(isNaN(Number(names[0])) == false){
+                temp = names.replace(/\d+/g, '').split('-')
+                listOfNames = temp.splice(1, temp.length - 1)
+            }
+            else{
+                listOfNames = names.split(',')
+            }
+            
+            listOfNames.forEach((player, index) => {
                 var players = $("#players");
-                players.append("<div class='item'>" + player.trim() + "</div>");
+                players.append("<div class='item'>" + playerNumber + ' - ' + player.trim() + "</div>");
+                playerNumber = playerNumber + 1
             });
+
             $("#player").val("");
             $("#invalid").fadeOut();
         }
