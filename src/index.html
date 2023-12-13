@@ -1,55 +1,31 @@
-<!doctype html>
-<html lang="pt-BR">
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-        <link rel="shortcut icon" href="./content/favicon.ico" type="image/x-icon">
-        <link rel="icon" href="./content/favicon.ico" type="image/x-icon">
-        <link rel="stylesheet" type="text/css" href="./content/css/bootstrap.min.css">
-        <link rel="stylesheet" type="text/css" href="./public/css/style.css">
-        <script type="text/javascript" src="./content/js/jquery-3.4.1.min.js"></script>
-        <script type="text/javascript" src="./content/js/bootstrap.min.js"></script>
-        <script type="text/javascript" src="./public/js/index.js"></script>
-        <title>+JOGADORES</title>
-    </head>
-    <body>
-        <div class="container">
-            <div class="row">
-                <div class="col-sm" style="min-width: 60%;">
-                    <div id="register">
-                        <div class="header">
-                        <h1 class="title">+JOGADORES</h1>
-                        <div class="input-group">
-                            <div id="invalid" class="input-group-prepend" style="display: none;">
-                                <div class="input-group-text invalid">!</div>
-                            </div>
-                            <input id="player" type="text" class="form-control" placeholder="Digite o nome do jogador">
-                            <div class="input-group-btn">
-                              <button id="add">Adicionar</button>
-                            </div>
-                        </div>
-                        </div>
-                        <div class="content">
-                        <h6 class="title">ADICIONADOS</h6>
-                        <hr>
-                        <div id="players">
-                        </div>
-                        </div>
-                        <div class="footer">
-                        <div class="input-group">
-                            <div id="invalidQty" class="input-group-prepend" style="display: none;">
-                                <div class="input-group-text invalid">!</div>
-                            </div>
-                            <input id="qty" type="number" class="form-control" placeholder="Nº por time">
-                            <div class="input-group-btn" style="width: 56%;">
-                                <button id="shuffle">SORTEAR</button>
-                            </div>
-                        </div>
-                        </div>
-                    </div>
-                    <div id="result" style="display: none;"></div>
-                </div>
-            </div>
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8">
+    <title>Sorteador de Times</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+    <div class="container mt-4">
+      <h1 class="mb-4">Sorteador de Times</h1>
+      <form>
+        <div class="form-group">
+          <label for="players">Digite os nomes dos jogadores:</label>
+          <textarea class="form-control" id="players" rows="5"></textarea>
         </div>
-    </body>
+        <div class="form-group">
+          <label for="min-players">Mínimo de jogadores por time:</label>
+          <input type="number" class="form-control" id="min-players" value="2" min="1">
+        </div>
+        <button type="submit" class="btn btn-primary mb-3">Sortear Times</button>
+        <div id="validation-message" class="text-danger"></div>
+      </form>
+      <div id="result"></div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+    <script src="js/sorteio.js"></script>
+  </body>
 </html>

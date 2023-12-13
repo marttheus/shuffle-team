@@ -1,0 +1,58 @@
+body {
+    background-color: #252525;
+    color: white;
+  }
+  
+  h1 {
+    color: #006400;
+    text-shadow: 1px 1px #fff;
+    text-align: center;
+  }
+  
+  label {
+    font-weight: bold;
+  }
+  
+  .btn-primary {
+    background-color: #006400;
+    border-color: #006400;
+  }
+  
+  .btn-primary:hover {
+    background-color: #006400;
+    border-color: #006400;
+  }
+  
+  .text-danger {
+    color: red !important;
+  }
+
+.team {
+    border-width: 1px;
+    border-style: solid;
+    padding: 20px;
+    width: 25%;
+    float: left;
+    height: 233px;
+}
+
+.team h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    text-align: center;
+    font-weight: bold;
+    font-variant: small-caps;
+    letter-spacing: 4px;
+}
+
+.team ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.team li {
+  font-size: 18px;
+  margin-bottom: 5px;
+}
+  
